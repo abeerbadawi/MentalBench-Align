@@ -1,6 +1,6 @@
 # MentalBench-10: Benchmarking LLMs in Mental Health Support
 
-This repository contains the code, data, and evaluation results for the paper **"From Empathy to Action: Benchmarking LLMs in Mental Health with MentalBench-10 and a Novel Cognitive-Affective Evaluation Approach"** (ICLR 2025).
+This repository contains the code, data, and evaluation results for the paper **"From Empathy to Action: Benchmarking LLMs in Mental Health with MentalBench-10 and a Novel Cognitive-Affective Evaluation Approach"** (Submitted to EMNLP 2025).
 
 ## Overview
 
@@ -41,11 +41,12 @@ The dataset contains 10,000 real-world mental health conversations sourced from 
 - **MentalChat16K**: 6,338 conversations from PISCES clinical trial
 - **EmoCare**: 8,187 counseling sessions
 - **CounselChat**: 854 therapist responses
+  We cleaned the dataset, and from the 15379 conversations we used 10000 for evaluation. 
 
 Each conversation includes:
 - User context (mental health concern)
 - Human expert response
-- Responses from 9 LLMs (GPT-4o, GPT-4o-Mini, Claude-3.5-Haiku, Gemini-2.0-Flash, LLaMA-3.1-8B-Instruct, Qwen2.5-7B-Instruct, Qwen-3-4B, DeepSeek-LLaMA-8B, DeepSeek-Qwen-7B)
+- Responses from 9 LLMs that we generated (GPT-4o, GPT-4o-Mini, Claude-3.5-Haiku, Gemini-2.0-Flash, LLaMA-3.1-8B-Instruct, Qwen2.5-7B-Instruct, Qwen-3-4B, DeepSeek-LLaMA-8B, DeepSeek-Qwen-7B)
 
 ### Dataset Statistics
 
@@ -71,7 +72,7 @@ Each conversation includes:
 
 ### Evaluation Methods
 
-1. **LLM-as-a-Judge**: Four LLM judges (GPT-4o, GPT-4o-Mini, Claude-3.7-Sonnet, Gemini-2.5-Flash) evaluated 100,000 responses
+1. **LLM-as-a-Judge**: Four LLM judges (GPT-4o, GPT-4o-Mini, Claude-3.7-Sonnet, Gemini-2.5-Flash) evaluated 10,000 conversations with a total of 100,000 responses
 2. **Human Expert Evaluation**: Two clinical experts evaluated 2,500 responses (250 conversations)
 3. **Alignment Factor**: Measures agreement between human and LLM-based ratings
 
