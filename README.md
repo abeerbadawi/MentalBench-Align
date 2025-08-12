@@ -48,6 +48,7 @@ The dataset contains 10,000 real-world mental health conversations sourced from 
 - **MentalChat16K**: 6,338 conversations from PISCES clinical trial
 - **EmoCare**: 8,187 counseling sessions
 - **CounselChat**: 854 therapist responses
+
   We cleaned the dataset, and from the 15379 conversations we used 10000 for evaluation. 
 
 Each conversation includes:
