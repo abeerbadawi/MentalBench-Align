@@ -1,6 +1,7 @@
 # MentalBench-10: Benchmarking LLMs in Mental Health Support
 
 This repository contains the code, data, and evaluation results for the paper **"From Empathy to Action: Benchmarking LLMs in Mental Health with MentalBench-10 and a Novel Cognitive-Affective Evaluation Approach"** (Submitted to EMNLP 2025).
+<img width="2870" height="1588" alt="framework2" src="https://github.com/user-attachments/assets/17fe70cb-c890-4bf3-9905-1b5fb7f94f59" />
 
 ## Overview
 
