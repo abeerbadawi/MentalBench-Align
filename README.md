@@ -17,9 +17,17 @@ MentalBench-10 is a large-scale real-world benchmark for evaluating Large Langua
 ## Repository Structure
 
 ```
-├── data/                          # Dataset files
-│   ├── MentalBench-10.csv        # Main dataset with conversations and responses
-│   └── metadata/                  # Dataset metadata and documentation
+├── MentalBench-100k/              # Dataset files
+│   ├── MentalBench-100k.csv       # Main dataset with conversations and responses
+│   └── metadata/                 # Dataset metadata and documentation
+├── MentalAlign-70k/              # Human and LLMs as a judge evalaution results
+│   ├──LLM as a judge Evaluation/     # LLMs as a judge Evaluation Results
+│      ├── claude-3-7-sonnet_llm_judge.csv   # Claude as LLM as a judge
+│      ├── gemini-2.5-flash_llm_judge.csv    # Gemini as LLM as a judge
+│      ├── gpt-4o-llm_judge.csv      # GPT 4o as LLM as a judge
+│      └── o4-mini-llm_judge.csv     # o4-mini as LLM as a judge
+    ├── Human Evaluation /         # Human Evaluation Results
+│       ├── HumanEvaluation.csv   # Humans as a judge
 ├── code/                          # Implementation code
 │   ├── generation/                # LLM response generation scripts
 │   ├── evaluation/                # Evaluation framework implementation
@@ -31,13 +39,7 @@ MentalBench-10 is a large-scale real-world benchmark for evaluating Large Langua
 ├── docs/                          # Documentation
 │   ├── evaluation_guidelines.md   # Evaluation criteria and guidelines
 │   └── dataset_description.md    # Dataset description and statistics
-├── LLM as a judge Evaluation/     # LLMs as a judge Evaluation Results
-│   ├── claude-3-7-sonnet_llm_judge.csv   # Claude as LLM as a judge
-│   ├── gemini-2.5-flash_llm_judge.csv    # Gemini as LLM as a judge
-│   ├── gpt-4o-llm_judge.csv      # GPT 4o as LLM as a judge
-│   └── o4-mini-llm_judge.csv     # o4-mini as LLM as a judge
-├── Human Evaluation /     # Human Evaluation Results
-│   ├── HumanEvaluation.csv   # Humans as a judge
+├── 
 └── README.md                      # This file
 ```
 
