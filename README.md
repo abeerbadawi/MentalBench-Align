@@ -1,6 +1,6 @@
 # MentalBench-100k & MentalAlign-70k: Reliable Evaluation of LLMs in Mental Health Dialogue  
 
-This repository contains the datasets, code, and evaluation pipeline for the paper **"WHEN CAN WE TRUST LLMS IN MENTAL HEALTH? LARGE-SCALE BENCHMARKS FOR RELIABLE DIALOGUE EVALUATION AND ALIGNMENT"**.  
+This repository contains the datasets, code, and evaluation pipeline for the paper **"When Can We Trust LLMs in Mental Health? Large-Scale Benchmarks for Reliable Dialogue Evaluation and Alignment"**.  
 
 <img width="2870" height="1588" alt="framework" src="https://github.com/user-attachments/assets/17fe70cb-c890-4bf3-9905-1b5fb7f94f59" />
 
