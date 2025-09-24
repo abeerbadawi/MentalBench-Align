@@ -1,18 +1,30 @@
-# MentalBench-10: Benchmarking LLMs in Mental Health Support
+# MentalBench-100k & MentalAlign-70k: Reliable Evaluation of LLMs in Mental Health Dialogue  
 
-This repository contains the code, data, and evaluation results for the paper **"From Empathy to Action: Benchmarking LLMs in Mental Health with MentalBench-10 and a Novel Cognitive-Affective Evaluation Approach"**.
-<img width="2870" height="1588" alt="framework2" src="https://github.com/user-attachments/assets/17fe70cb-c890-4bf3-9905-1b5fb7f94f59" />
+This repository contains the datasets, code, and evaluation pipeline for the paper **"WHEN CAN WE TRUST LLMS IN MENTAL HEALTH? LARGE-SCALE BENCHMARKS FOR RELIABLE DIALOGUE EVALUATION AND ALIGNMENT"**.  
 
-## Overview
+<img width="2870" height="1588" alt="framework" src="https://github.com/user-attachments/assets/17fe70cb-c890-4bf3-9905-1b5fb7f94f59" />
 
-MentalBench-10 is a large-scale real-world benchmark for evaluating Large Language Models (LLMs) in mental health support contexts. The benchmark comprises 10,000 real-world mental health conversations with responses from one human expert and nine leading LLMs.
+---
 
-## Key Contributions
+## Overview  
 
-1. **MentalBench-10 Dataset**: 10,000 real-world mental health conversations with human and LLM responses
-2. **Novel Evaluation Framework**: Dual-axis evaluation using Cognitive Support Score (CSS) and Affective Resonance Score (ARS)
-3. **LLM-as-a-Judge Evaluation**: Scalable evaluation using four high-performing LLM judges
-4. **Alignment Factor**: Metric to measure agreement between human and LLM-based ratings
+We introduce two complementary benchmarks for systematically evaluating LLMs in mental health support:  
+
+- **MentalBench-100k**: 10,000 authentic therapeutic conversations paired with 9 diverse LLM responses each (100,000 responses total).  
+- **MentalAlign-70k**: 70,000 ratings across 7 attributes from both human clinical experts and LLM judges, enabling the first large-scale human–AI comparison of evaluation reliability.  
+
+Together, these resources establish a dual-benchmark ecosystem for studying **response generation** and **evaluation alignment** in mental health contexts.  
+
+---
+
+## Key Contributions  
+
+1. **MentalBench-100k Dataset**: Largest benchmark of authentic single-session therapeutic dialogues with 9 LLM-generated responses per conversation.  
+2. **MentalAlign-70k Dataset**: Dual-axis evaluation (Cognitive Support Score, Affective Resonance Score) with 70,000 ratings from experts and 4 LLM judges.  
+3. **Affective–Cognitive Alignment Framework**: Reliability-oriented methodology using Intraclass Correlation Coefficients (ICC), bootstrap confidence intervals, and bias analysis to quantify agreement magnitude and precision.  
+4. **Reliability Guidance**: First evidence-based recommendations for when LLM-as-a-judge evaluation can be trusted and when human oversight is essential.  
+
+---
 
 ## Repository Structure
 
@@ -42,6 +54,77 @@ MentalBench-10 is a large-scale real-world benchmark for evaluating Large Langua
 ├── 
 └── README.md                      # This file
 ```
+
+
+
+## Dataset  
+
+### MentalBench-100k  
+
+- **Conversations**: 10,000  
+- **Responses per conversation**: 1 human + 9 LLMs  
+- **Total responses**: 100,000  
+- **Conditions covered**: 23 clinically relevant categories (anxiety, depression, relationships, grief, etc.)  
+- **Average context length**: 72.6 words  
+- **Average response length**: 87.0 words  
+
+**LLMs used**: GPT-4o, GPT-4o-Mini, Claude-3.5-Haiku, Gemini-2.0-Flash, LLaMA-3.1-8B-Instruct, Qwen2.5-7B, Qwen-3-4B, DeepSeek-LLaMA-8B, DeepSeek-Qwen-7B.  
+
+---
+
+### MentalAlign-70k  
+
+- **Ratings**: 70,000 across 1,000 conversations × 10 responses × 7 attributes  
+- **Judges**: 3 human experts + 4 LLMs (Claude-3.7-Sonnet, GPT-4o, GPT-4o-Mini, Gemini-2.5-Flash)  
+- **Attributes**:  
+  - **Cognitive Support Score (CSS)**: Guidance, Informativeness, Relevance, Safety  
+  - **Affective Resonance Score (ARS)**: Empathy, Helpfulness, Understanding  
+
+---
+
+## Evaluation Framework  
+
+- **ICC Analysis**: Agreement and consistency between human and LLM judges.  
+- **Bootstrap Confidence Intervals**: Quantify precision of reliability estimates.  
+- **Bias Detection**: Attribute- and model-specific inflation analysis.  
+- **Reliability Categories**:  
+  - Good Reliability (GR)  
+  - Moderate Validation Needed (MV)  
+  - Limited Reliability (LR)  
+
+This framework reveals where automated evaluation is reliable (e.g., Guidance, Informativeness) and where human oversight is mandatory (e.g., Empathy, Safety, Relevance).  
+
+---
+
+## Results (Highlights)  
+
+- **High-capacity models** (GPT-4o, Gemini-2.0-Flash) consistently outperform smaller open-source systems.  
+- **Empathy & Helpfulness** show deceptively high scores but wide uncertainty, requiring caution.  
+- **Safety & Relevance** exhibit systematically poor reliability across judges.  
+- **LLM Judges** systematically inflate ratings (+0.4–0.8 on affective attributes).  
+
+---
+
+## Ethical Considerations This work involves sensitive mental health data and AI-generated responses. Key considerations: 
+- All datasets were publicly available and anonymized
+- - Models are not intended to replace human therapists
+- - Potential for demographic and cultural biases - Emotional burden on human annotators acknowledged
+- - Focus on responsible AI deployment in mental health
+
+## Usage  
+
+### Setup  
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/mentalbench-align.git
+cd mentalbench-align
+
+# Install dependencies
+pip install -r requirements.txt
+
+
+
 
 ## Dataset
 
