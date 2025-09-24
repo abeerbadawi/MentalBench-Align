@@ -1,4 +1,4 @@
-# Evaluation Guidelines for MentalBench-10
+# Evaluation Guidelines 
 
 This document outlines the evaluation framework used in MentalBench-10 for assessing LLM responses in mental health support contexts.
 
@@ -90,17 +90,13 @@ The evaluation framework uses a dual-axis approach with two main scores:
 ### 1. LLM-as-a-Judge
 - **Judges**: GPT-4o, GPT-4o-Mini, Claude-3.7-Sonnet, Gemini-2.5-Flash
 - **Scale**: 1-5 Likert scale for each attribute
-- **Coverage**: 100,000 responses (10,000 conversations × 10 responses each)
+- **Coverage**: 10,000 responses (1,000 conversations × 10 responses each)
 
 ### 2. Human Expert Evaluation
 - **Evaluators**: Two clinical experts with psychiatric training
 - **Scale**: 1-5 Likert scale for each attribute
-- **Coverage**: 2,500 responses (250 conversations × 10 responses each)
+- **Coverage**: 10,000 responses (1,000 conversations × 10 responses each)
 
-### 3. Alignment Factor
-- **Metric**: Average absolute difference between human and LLM judge ratings
-- **Formula**: AF = (1/N×A) × Σ|LLMi,a - Humani,a|
-- **Purpose**: Quantify agreement between human and LLM-based evaluations
 
 ## Evaluation Prompt
 
