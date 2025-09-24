@@ -114,17 +114,4 @@ For each response, evaluation scores are provided across seven dimensions:
 - **Privacy**: All data anonymized and de-identified
 
 
-### Citation
-
-When using this dataset, please cite:
-
-```bibtex
-@inproceedings{mentalbench10-iclr2025,
-  title={From Empathy to Action: Benchmarking LLMs in Mental Health with MentalBench-10 and a Novel Cognitive-Affective Evaluation Approach},
-  author={Anonymous},
-  booktitle={},
-  year={2025}
-}
-```
-
 
