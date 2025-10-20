@@ -2,9 +2,8 @@
 
 This repository contains the datasets, code, and evaluation pipeline for the paper **"When Can We Trust LLMs in Mental Health? Large-Scale Benchmarks for Reliable Dialogue Evaluation and Alignment"**.  
 
-<img width="2870" height="1588" alt="framework" src="https://github.com/user-attachments/assets/17fe70cb-c890-4bf3-9905-1b5fb7f94f59" />
+<img width="2870" height="1588" alt="framework" src="https://github.com/user-attachments/assets/50fb664d-beb4-4c07-8d4d-d392e15c2a36" />
 
----
 
 ## Overview  
 
