@@ -1,8 +1,8 @@
-# MentalBench-10 Dataset Description
+# MentalBench-100k Dataset Description
 
 ## Overview
 
-MentalBench-10 is a comprehensive benchmark dataset for evaluating Large Language Models (LLMs) in mental health support contexts. The dataset comprises 10,000 real-world mental health conversations with responses from one human expert and nine leading LLMs.
+MentalBench-100k is a comprehensive benchmark dataset for evaluating Large Language Models (LLMs) in mental health support contexts. The dataset comprises 10,000 mental health conversations with responses from the original dataset and nine leading LLMs.
 
 ## Dataset Sources
 
@@ -32,11 +32,10 @@ The dataset is curated from three high-integrity, publicly available mental heal
 ## Dataset Statistics
 
 ### General Statistics
-- **Total Conversations**: 14,737 (original), 10,000 (development set)
+- **Total Conversations**: 14,737 (original), 10,000 (after cleaning and removinf duplicates)
 - **Average Context Length**: 72.64 words
 - **Average Response Length**: 87.03 words
 - **Mental Health Conditions**: 23 categories
-- **Data Split**: 10,000 development, 4,737 training
 - **Total Model Responses**: 100,000 (10,000 conversations × 10 responses each)
 
 ### Mental Health Condition Distribution
@@ -81,9 +80,7 @@ Each conversation includes responses from:
 | Column | Description |
 |--------|-------------|
 | `context` | User's mental health concern or inquiry |
-| `response` | Human expert response (ground truth) |
-| `context_length` | Word count of the context |
-| `response_length` | Word count of the human response |
+| `response` | Original dataset response |
 | `Claude-3.5-Haiku` | Response from Claude 3.5 Haiku |
 | `deepseek-llama` | Response from DeepSeek LLaMA |
 | `deepseek-qwen` | Response from DeepSeek Qwen |
