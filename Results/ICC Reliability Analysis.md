@@ -65,10 +65,8 @@ We applied our **Intraclass Correlation Coefficient (ICC) framework** to analyze
 
 ### 📈 Figure: ICC Reliability vs Precision Heatmaps
 
-![ICC Heatmaps](heat.pdf) :contentReference[oaicite:0]{index=0}
+<img width="1177" height="577" alt="Screenshot 2025-10-21 at 12 17 12 PM" src="https://github.com/user-attachments/assets/f847c0be-7d1c-4d6a-9f76-7a9c5bd935a5" />
+
 
 *Left: ICC(C,1) reliability | Right: Bootstrap CI width (green = more precise)*
 
----
-
-### 📦 Where this belongs in the repo:
