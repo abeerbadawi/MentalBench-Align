@@ -45,9 +45,9 @@ Together, these resources establish a dual-benchmark ecosystem for studying **re
 │   ├── evaluation/                # Evaluation framework implementation
 │   └── analysis/                  # Analysis and visualization scripts for the ICC Framework
 ├── results/                       # Evaluation results
-│   ├── Human Response Evaluation/        # LLM-as-a-judge evaluation results
-│   ├── ICC Reliability Analysis/         # Human expert evaluation results
-│   └── Systematic Bias Decomposition/       # Alignment factor analysis
+│   ├── Human Response Evaluation/        #  Human expert evaluation results
+│   ├── ICC Reliability Analysis/         # ICC Analysis from the paper
+│   └── Systematic Bias Decomposition/    # Bias Results
 ├── docs/                          # Documentation
 │   ├── evaluation_guidelines.md   # Evaluation criteria and guidelines
 │   └── dataset_description.md    # Dataset description and statistics
