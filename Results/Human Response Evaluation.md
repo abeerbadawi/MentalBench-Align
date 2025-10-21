@@ -19,7 +19,7 @@ The table below presents human-rated evaluation scores (scale: 1–5) for each L
 
 ---
 
-### 📍 What this shows
+### What this shows
 
 This table corresponds to the results from **RQ1** and establishes the **human rating baseline**:
 
@@ -42,7 +42,3 @@ This table corresponds to the results from **RQ1** and establishes the **human r
 - Among **open-source models**, *LLaMA-3.1-8B* is the strongest performer, scoring an average of *4.54*.
 - Lower-capacity open models like **Qwen-3-4B** trail behind, particularly in guidance, empathy, and helpfulness.
 - Performance differences between cognitive attributes (Guidance, Informativeness, Relevance, Safety) and affective ones (Empathy, Helpfulness, Understanding) inform deeper analysis in later sections (RQ2, RQ3).
-
----
-
-### 📂 Where this lives in the repo
