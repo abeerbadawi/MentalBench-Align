@@ -30,9 +30,9 @@ Together, these resources establish a dual-benchmark ecosystem for studying **re
 
 ```
 ├── MentalBench-100k/              # Dataset files
-│   ├── MentalBench-100k.csv       # Main dataset with conversations and responses
+│   ├── MentalBench-100k.zip       # Main dataset with conversations and responses
 │   └── metadata/                 # Dataset metadata and documentation
-├── MentalAlign-70k/              # Human and LLMs as a judge evalaution results
+├── MentalAlign-70k/              # Human and LLMs as a judge evaluation results
 │   ├──LLMs_as_a_judge/     # LLMs as a judge Evaluation Results
 │      ├── claude-3-7-sonnet_llm_judge.csv   # Claude as LLM as a judge
 │      ├── gemini-2.5-flash_llm_judge.csv    # Gemini as LLM as a judge
