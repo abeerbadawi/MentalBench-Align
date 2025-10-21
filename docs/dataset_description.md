@@ -32,7 +32,7 @@ The dataset is curated from three high-integrity, publicly available mental heal
 ## Dataset Statistics
 
 ### General Statistics
-- **Total Conversations**: 14,737 (original), 10,000 (after cleaning and removinf duplicates)
+- **Total Conversations**: 14,737 (original), 10,000 (after cleaning and removing duplicates)
 - **Average Context Length**: 72.64 words
 - **Average Response Length**: 87.03 words
 - **Mental Health Conditions**: 23 categories
