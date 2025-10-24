@@ -1,6 +1,6 @@
 # MentalBench-100k & MentalAlign-70k: Reliable Evaluation of LLMs in Mental Health Dialogue  
 
-This repository contains the datasets, code, and evaluation pipeline for the paper **"When Can We Trust LLMs in Mental Health? Large-Scale Benchmarks for Reliable Dialogue Evaluation and Alignment"**.  
+This repository contains the datasets, code, and evaluation pipeline for the paper **"When Can We Trust LLMs in Mental Health? Large-Scale Benchmarks for Reliable Dialogue Evaluation and Alignment"**.  Paper Link: https://arxiv.org/pdf/2510.19032
 
 <img width="2870" height="1588" alt="framework" src="https://github.com/user-attachments/assets/50fb664d-beb4-4c07-8d4d-d392e15c2a36" />
 
@@ -134,11 +134,14 @@ python Codes/analysis/icc_corrected_with_bootstrap_ci.py
 ##  Citation
 ```bibtex
 
+@article{badawi2025trustllms,
   title={When Can We Trust LLMs in Mental Health? Large-Scale Benchmarks for Reliable LLM Evaluation},
   author={Badawi, Abeer and Rahimi, Elahe and Laskar, Md Tahmid Rahman and others},
+  journal={arXiv preprint arXiv:2510.19032},
   year={2025},
-  journal={arXiv preprint arXiv:XXXX.XXXXX}
+  url={https://arxiv.org/pdf/2510.19032}
 }
+
 
 ## Ethical Considerations
 
